@@ -36,6 +36,7 @@ nav .menu-items ul {
   margin-right: 7rem;
   font-weight: 500;
 }
+
 nav .menu-items ul li {
   margin: 0px 25px;
   cursor: pointer;
@@ -97,4 +98,38 @@ nav .menu-items ul .special:hover {
 
 .right-container a {
   text-decoration: none;
+}
+
+@media screen and (max-width: 880px){
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .logo {
+    margin-left: 0;
+  }
+
+  nav .menu-items ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 7px;
+    margin-right: 0;
+  }
+
+  .left-container {
+    display: none;
+  }
+
+  .right-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 7rem;
+  }
 }
