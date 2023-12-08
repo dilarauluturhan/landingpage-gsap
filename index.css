@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000000;
+  color: #fbf6ee;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  font-size: 1.1rem;
+  padding-top: 30px;
+}
+
+nav .logo {
+  margin-left: 7rem;
+}
+
+nav .menu-items ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: 7rem;
+  font-weight: 500;
+}
+nav .menu-items ul li {
+  margin: 0px 25px;
+  cursor: pointer;
+}
+
+nav .menu-items ul li:hover {
+  color: #090fa6;
+}
+
+nav .menu-items ul .special {
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #fbf6ee;
+  color: #000000;
+}
+
+nav .menu-items ul .special:hover {
+  background-color: #090fa6;
+  color: #fbf6ee;
+}
+
+.wrapper {
+  position: absolute;
+  bottom: 0%;
+  z-index: -1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 30px;
+  height: fit-content;
+}
+
+.left-container {
+  margin-left: 7rem;
+}
+
+.left h1 {
+  width: 80%;
+  margin: 10px 0px;
+  line-height: 95%;
+  font-size: 70px;
+  font-weight: lighter;
+}
+
+.right-container {
+  margin-right: 25px;
+  width: 200px;
+  height: fit-content;
+  font-size: 50px;
+}
+
+.right-container a {
+  text-decoration: none;
+}
